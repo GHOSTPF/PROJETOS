@@ -1,0 +1,26 @@
+html
+<h1> Descubra o seu IMC </h1>
+
+<p>
+  O IMC ou índice de massa corporal, nos ajuda a identificar algumas caracteristicas como obesidade ou desnutrição. Abaixo temos uma tabela indicando o significado do valor que você encontrar:
+</p>
+<ul>
+  <li> Abaixo de 17, Muito abaixo do peso</li>
+  <li> Entre 17 e 18,49    Abaixo do peso</li>
+  <li> Entre 18,5 e 24,99  Peso normal</li>
+  <li> Entre 25 e 29,99    Acima do peso</li>
+  <li> Entre 30 e 34,99    Obesidade I</li>
+  <li> Entre 35 e 39,99    Obesidade II</li>
+  </ul>
+<p>
+ O IMC é calculado dividindo o peso pela altura elevada ao quadrado. Será que você consegue descobrir qual o seu IMC?</p>
+ 
+ 
+JS
+var suaaltura = prompt("qual a sua altura"),
+seupeso = prompt("qual o seu peso"), resultado;
+
+resultado = (seupeso*seupeso)/suaaltura;
+
+document.write(`seu IMC é: ${resultado.toFixed(2)}`);
+
